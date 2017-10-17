@@ -1,0 +1,223 @@
+﻿
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {max-width: 1200px; margin: 0px; margin-left:auto; margin-right: auto;  font-family: 'Open Sans',serif;}
+#top {width:100%; border-top: 1px solid #000; }
+
+.top-left {width: 48%; height: 50px; float:left; font-size: 22pt;padding: 1%;}
+.top-right {width: 50%; height: 50px; float: left; text-align:  }
+.top-right a {float:right;}
+.button {
+    background-color: #1f96c1; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	float:right;
+	margin-top:10px;
+
+}
+.button:hover {
+	background-color: #000; 
+	
+	
+}
+nav {width: 100%;height: 30px; clear:both;}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image:linear-gradient(to bottom,#40474e,#32363b);
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav li p {
+   
+    color: white;
+    text-align: right;
+ 
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav li a:hover {
+    background-color: #000;
+}
+.search-box {width: 90%;height: 100px; float:left; background:#1f96c1; padding:5%;}
+.search-box  input {width: 40%; height: 50px;}
+#content { width: 100%}
+table {width:100% ;border: 0px}
+table td {border-bottom: 1px solid #1f96c1; text-align :center;}
+table td.naglowki {text-align:center; font-weight:bold}
+table tr {height: 30px; }
+#works {}
+#dodajMM {background:#1f96c1;}
+   </style>
+
+</head>
+
+
+<body>
+
+System Wspomagania sprzedaży SklepKamil
+<div id="top">
+	<div class="top-left">01Andrychów</div>
+	<div class="top-right"><a href="">Wyloguj</a><br>Data ostatniej synchronizacji: 18-06-2016 15:05 </div>
+</div>
+<nav>
+	<ul>
+	<li><a href="">Home</a></li>
+	<li><a href="">Przerzutki</a></li>
+	<li><a href="">Reklamacje</a></li>
+	<li><a href="">Zadania</a></li>
+	<li><a href="">Raporty</a></li>
+	<li style="float:right;"><p>[AKTUALNY CZAS]</p></li>
+	</ul>
+</nav>
+
+<div id="container">
+	<div class="search-box">
+	<input type="text" value="wpisz Ean lub kod produktu"> 
+	<a href="dodaj.htm" target="popup" onclick="window.open('dodaj.htm','name','width=600,height=400')">Dodaj</a>
+	</div>
+	
+	<div id="content">
+		<div class="MM">
+			<h2>Dzisiejsze dokumenty MM </h2>
+			
+			<table>
+			<tr>
+			<td class="naglowki">Lp.</td>
+			<td class="naglowki">EAN</td>
+			<td class="naglowki">KOD</td>
+			<td class="naglowki">Nazwa</td>
+			<td class="naglowki">Na</td>
+			<td class="naglowki">Data</td>
+			<td class="naglowki">Operacje</td>
+			</tr>
+				<tr>
+				<td>1</td>
+			<td>12345678</td>
+			<td>BAD-2159-036-40</td>
+			<td>Półbuty Badura 2159</td>
+			<td>MA</td>
+			<td>17-06-2016</td>
+			<td>Usuń/Zmień</td>
+			</tr>
+				<tr>
+				<td>2</td>
+			<td>12345678</td>
+			<td>BAD-2159-036-40</td>
+			<td>Półbuty Badura 2159</td>
+			<td>MA</td>
+			<td>17-06-2016</td>
+			<td>Usuń/Zmień</td>
+			</tr>
+			
+			
+			</table>
+			<input type="button" class="button" value="Zakończenie dnia">
+			
+			<div style="clear: both;"></div>
+		</div>
+		<div id="works">
+			<h2>ZADANIA:</h2>
+			<table>
+			<tr>
+			<td class="naglowki">ID</td>
+			<td class="naglowki">Nazwa</td>
+			<td class="naglowki">Opis</td>
+			<td class="naglowki">Termin</td>
+			<td class="naglowki">Status</td>
+			<td class="naglowki">Uwagi</td>
+			<td class="naglowki">Operacje</td>
+			</tr>	
+			<tr>
+			<td>1</td>
+			<td>Kartony</td>
+			<td>Spakować 5 kartonów mokasyny 2016</td>
+			<td>18-06-2016</td>
+			<td>Wprowadzone</td>
+			<td>Uwagi</td>
+			<td>Edytuj</td>
+			</table>
+		</div>
+	
+		<div id="complaints">
+			<h2>REKLAMACJE:</h2>
+			<p>Nadchodzące terminy reklamacji </p>
+			
+			
+			<table>
+			<tr>
+			<td class="naglowki">Lp.</td>
+			<td class="naglowki">EAN</td>
+			<td class="naglowki">KOD</td>
+			<td class="naglowki">Imię</td>
+			<td class="naglowki">Nazwisko</td>
+			<td class="naglowki">Miasto</td>
+			<td class="naglowki">Telefon</td>
+			<td class="naglowki">Opis wady</td>
+			<td class="naglowki">Termin</td>
+			<td class="naglowki">Status</td>
+			<td class="naglowki">Operacje</td>
+			</tr>
+				<tr>
+				<td>1</td>
+			<td>12345678</td>
+			<td>BAD-2159-036-40</td>
+			<td>Szymon</td>
+			<td>Lyson</td>
+			<td>Rzyki</td>
+			<td>600 706 623</td>
+			<td>Pęknięta podeszwa w prawym bucie</td>
+			<td>17-06-2016</td>
+			<td>U producenta</td>
+			<td>Edytuj</td>
+			</tr>
+				
+			
+			
+			</table>
+		</div>
+	</div>
+	
+	
+
+
+</div>
+<div id="footer">
+
+
+</div>
+
+
+
+
+
+</body>
+
+
+</html>
